@@ -1,0 +1,122 @@
+[
+  {
+    "thread_ts": "1671024600.123456",
+    "messages": [
+      {
+        "ts": "1671024600.123456",
+        "user": "user1",
+        "text": "Hi everyone, I'm getting an authentication error when trying to connect to the API. Has anyone seen this before?"
+      },
+      {
+        "ts": "1671024720.123456", 
+        "user": "user2",
+        "text": "What's the exact error message you're seeing?"
+      },
+      {
+        "ts": "1671024780.123456",
+        "user": "user1", 
+        "text": "It says 'Invalid API key provided'. But I just generated a new key yesterday."
+      },
+      {
+        "ts": "1671024840.123456",
+        "user": "user3",
+        "text": "Try regenerating the key and make sure you're using the correct environment endpoint."
+      },
+      {
+        "ts": "1671024900.123456",
+        "user": "user1",
+        "text": "That worked! Thanks so much. The old key must have been revoked somehow."
+      }
+    ]
+  },
+  {
+    "thread_ts": "1671025200.234567",
+    "messages": [
+      {
+        "ts": "1671025200.234567",
+        "user": "user4",
+        "text": "How do I set up Docker for local development? I'm new to containers."
+      },
+      {
+        "ts": "1671025260.234567",
+        "user": "user5", 
+        "text": "Check out our setup guide in the docs. You'll need Docker Desktop installed first."
+      },
+      {
+        "ts": "1671025320.234567",
+        "user": "user4",
+        "text": "Perfect, I'll follow that guide. Thanks!"
+      }
+    ]
+  },
+  {
+    "thread_ts": "1671025800.345678", 
+    "messages": [
+      {
+        "ts": "1671025800.345678",
+        "user": "user6",
+        "text": "Database connection is timing out in staging environment. Server logs show connection pool exhausted."
+      },
+      {
+        "ts": "1671025860.345678",
+        "user": "user7",
+        "text": "Looks like we have a connection leak. I'll investigate the recent database changes."
+      },
+      {
+        "ts": "1671026400.345678",
+        "user": "user7", 
+        "text": "Found the issue - missing connection.close() in the new user service. Fixing now."
+      },
+      {
+        "ts": "1671026460.345678",
+        "user": "user6",
+        "text": "Great catch! Should we add monitoring for connection pool usage?"
+      },
+      {
+        "ts": "1671026520.345678",
+        "user": "user7",
+        "text": "Yes, I'll add that to our monitoring dashboard."
+      }
+    ]
+  },
+  {
+    "thread_ts": "1671026700.456789",
+    "messages": [
+      {
+        "ts": "1671026700.456789", 
+        "user": "user8",
+        "text": "FYI - We're releasing version 2.1.4 this afternoon. It includes the security patches we discussed."
+      },
+      {
+        "ts": "1671026760.456789",
+        "user": "user9",
+        "text": "Thanks for the heads up! Any breaking changes we should know about?"
+      },
+      {
+        "ts": "1671026820.456789",
+        "user": "user8",
+        "text": "No breaking changes, just bug fixes and security updates. Safe to deploy."
+      }
+    ]
+  },
+  {
+    "thread_ts": "1671027300.567890",
+    "messages": [
+      {
+        "ts": "1671027300.567890",
+        "user": "user10",
+        "text": "Would it be possible to add a bulk export feature to the dashboard? It would really help with our reporting."
+      },
+      {
+        "ts": "1671027360.567890", 
+        "user": "user11",
+        "text": "That's a great idea! I'll add it to our feature backlog. What format would you prefer?"
+      },
+      {
+        "ts": "1671027420.567890",
+        "user": "user10",
+        "text": "CSV would be perfect for our use case. Thanks for considering it!"
+      }
+    ]
+  }
+] 
