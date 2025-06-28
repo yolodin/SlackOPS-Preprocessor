@@ -1,0 +1,49 @@
+[
+    {
+      "thread_ts": "1717275841.000200",
+      "channel": "env-support",
+      "messages": [
+        {
+          "user": "alice",
+          "timestamp": "2025-06-01T10:24:00Z",
+          "text": "can you restart the sandbox instance for project x?"
+        },
+        {
+          "user": "bob",
+          "timestamp": "2025-06-01T10:27:00Z",
+          "text": "restarted `sandbox-x` on node `172.20.1.19`"
+        },
+        {
+          "user": "alice",
+          "timestamp": "2025-06-01T10:29:00Z",
+          "text": "thanks! looks good now"
+        }
+      ]
+    },
+    {
+      "thread_ts": "1717275870.000201",
+      "channel": "env-support",
+      "messages": [
+        {
+          "user": "john",
+          "timestamp": "2025-06-02T14:15:00Z",
+          "text": "can't access staging logs. permission denied error"
+        },
+        {
+          "user": "emily",
+          "timestamp": "2025-06-02T14:16:00Z",
+          "text": "checking IAM permissions now"
+        },
+        {
+          "user": "emily",
+          "timestamp": "2025-06-02T14:20:00Z",
+          "text": "added role: read-only logs to your profile"
+        },
+        {
+          "user": "john",
+          "timestamp": "2025-06-02T14:21:00Z",
+          "text": "works now. thanks!"
+        }
+      ]
+    }
+  ]
