@@ -1,4 +1,4 @@
-# Slackalyzer Preprocessor
+# SlackOPS Preprocessor
 
 This repository contains the AI/NLP backend pipeline for processing Slack support threads from help channels. It is the first stage of a larger system designed to analyze support interactions, extract insights, and identify automation opportunities in engineering environments.
 
@@ -18,7 +18,7 @@ The preprocessor takes raw Slack export data and transforms it into structured, 
 ## Project Structure
 
 ```
-slackalyzer-preprocessor/
+SlackOPS-Preprocessor/
 ├── run_pipeline.py          # Main execution script
 ├── preprocess.py            # Message formatting and metadata extraction
 ├── summarize.py             # Thread summarization logic
@@ -33,8 +33,8 @@ slackalyzer-preprocessor/
 This project requires Python 3.7 or higher. Clone the repository and install dependencies:
 
 ```bash
-git clone <repository-url>
-cd slackalyzer-preprocessor
+git clone https://github.com/yolodin/SlackOPS-Preprocessor
+cd SlackOPS-Preprocessor
 # No additional dependencies required - uses Python standard library
 ```
 
