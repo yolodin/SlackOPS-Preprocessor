@@ -1,0 +1,58 @@
+[
+  {
+    "thread_id": "1671024600.123456",
+    "summary": "User1: Hi everyone, I'm getting an authentication error when trying to connect to the API. Has anyone seen this before?",
+    "intent": "bug_report",
+    "confidence": 0.57,
+    "duration": "5.0m",
+    "duration_seconds": 300.0,
+    "message_count": 5,
+    "user_count": 3,
+    "processing_method": "ML",
+    "entities": [
+      "API"
+    ],
+    "topics": [
+      "authentication",
+      "api",
+      "configuration"
+    ],
+    "sentiment": "neutral",
+    "urgency": "medium"
+  },
+  {
+    "thread_id": "1671025200.234567",
+    "summary": "User4: How do I set up Docker for local development? I'm new to containers. user5: Check out our setup guide in the docs.",
+    "intent": "configuration",
+    "confidence": 0.5,
+    "duration": "2.0m",
+    "duration_seconds": 120.0,
+    "message_count": 3,
+    "user_count": 2,
+    "processing_method": "ML",
+    "entities": [
+      "Docker"
+    ],
+    "topics": [],
+    "sentiment": "positive",
+    "urgency": "medium"
+  },
+  {
+    "thread_id": "1671025800.345678",
+    "summary": "User6: Database connection is timing out in staging environment. User7: Looks like we have a connection leak. I'll investigate the recent database changes.",
+    "intent": "announcement",
+    "confidence": 0.28,
+    "duration": "12.0m",
+    "duration_seconds": 720.0,
+    "message_count": 5,
+    "user_count": 2,
+    "processing_method": "ML",
+    "entities": [],
+    "topics": [
+      "database",
+      "configuration"
+    ],
+    "sentiment": "neutral",
+    "urgency": "medium"
+  }
+]

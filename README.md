@@ -1,6 +1,6 @@
 # SlackOPS Preprocessor
 
-This repository contains the AI/NLP backend pipeline for processing Slack support threads from help channels. It is the first stage of a larger system designed to analyze support interactions, extract insights, and identify automation opportunities in engineering environments.
+This repository contains the AI/NLP backend pipeline for processing Slack support threads from help channels. It's the first stage of a system designed to analyze support interactions, extract insights, and identify automation opportunities in engineering environments.
 
 ## Overview
 
@@ -71,11 +71,11 @@ The pipeline expects JSON data in Slack export format:
 
 For each processed thread, the pipeline outputs:
 
-- **Thread ID**: Unique identifier from Slack
-- **Summary**: Automated description of thread content and type
-- **Intent**: Classified category (bug_report, feature_request, how_to_question, etc.)
-- **Duration**: Time span from first to last message
-- **Metadata**: Message count, user count, confidence scores
+- Thread ID: Unique identifier from Slack
+- Summary: Automated description of thread content and type
+- Intent: Classified category (bug_report, feature_request, how_to_question, etc.)
+- Duration: Time span from first to last message
+- Metadata: Message count, user count, confidence scores
 
 ## Components
 
@@ -122,10 +122,10 @@ The pipeline includes comprehensive error handling:
 
 To extend the pipeline:
 
-1. **Add new intent categories**: Modify the patterns in `classify.py`
-2. **Enhance summarization**: Update logic in `summarize.py`
-3. **Custom preprocessing**: Extend functions in `preprocess.py`
-4. **Output formats**: Modify result structure in `run_pipeline.py`
+1. Add new intent categories: Modify the patterns in `classify.py`
+2. Enhance summarization: Update logic in `summarize.py`
+3. Custom preprocessing: Extend functions in `preprocess.py`
+4. Output formats: Modify result structure in `run_pipeline.py`
 
 ## Sample Data
 
