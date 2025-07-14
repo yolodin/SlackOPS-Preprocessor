@@ -18,7 +18,7 @@ from sentence_transformers import SentenceTransformer
 import joblib
 
 # Fallback to rule-based classification if ML fails
-import classify
+from . import classify
 
 
 class MLIntentClassifier:

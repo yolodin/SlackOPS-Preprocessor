@@ -19,7 +19,7 @@ from nltk.stem import PorterStemmer
 import torch
 
 # Fallback to rule-based summarization
-import summarize
+from . import summarize
 
 
 class AbstractiveSummarizer:

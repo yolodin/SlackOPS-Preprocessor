@@ -6,14 +6,19 @@ Training script for ML models in SlackOPS-Preprocessor.
 import json
 import os
 import argparse
-from typing import List, Dict, Any
-import pandas as pd
+from typing import Dict, Any, List, Tuple
+from datetime import datetime
+import torch
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, classification_report
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+import numpy as np
+import random
 
-# Import our ML modules
-import classify_ml
-import summarize_ml
-import preprocess
+# Import our modules
+from . import preprocess
+from . import classify_ml
+from . import summarize_ml
 
 
 def create_synthetic_training_data(num_samples: int = 1000) -> List[Dict[str, Any]]:
@@ -21,7 +26,6 @@ def create_synthetic_training_data(num_samples: int = 1000) -> List[Dict[str, An
     Create synthetic training data for demonstration.
     In practice, you'd use real, human-annotated data.
     """
-    import random
     
     # Sample thread templates
     templates = {

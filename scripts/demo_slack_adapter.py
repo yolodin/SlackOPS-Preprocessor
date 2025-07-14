@@ -5,8 +5,13 @@ with the existing ML pipeline without modifying any working code.
 """
 
 import os
+import sys
 import json
-from slack_data_adapter import SlackDataAdapter, quick_setup
+
+# Add the src directory to the Python path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
+
+from slackops.slack_data_adapter import SlackDataAdapter, quick_setup
 
 
 def demo_adapter_with_existing_pipeline():

@@ -1,0 +1,75 @@
+[
+  {
+    "thread_ts": "1704067200.001",
+    "channel": "support",
+    "messages": [
+      {
+        "ts": "1704067200.001",
+        "user": "customer",
+        "text": "Hi team, our API integration is returning 500 errors since this morning. Can someone help?"
+      },
+      {
+        "ts": "1704067260.001",
+        "user": "support_agent",
+        "text": "I'll investigate this right away. Can you share which endpoints are affected?"
+      },
+      {
+        "ts": "1704067320.001",
+        "user": "customer", 
+        "text": "The /users/profile and /data/sync endpoints are both failing"
+      },
+      {
+        "ts": "1704067380.001",
+        "user": "support_agent",
+        "text": "Found the issue - we had a deployment that broke those endpoints. Rolling back now."
+      },
+      {
+        "ts": "1704067440.001",
+        "user": "support_agent",
+        "text": "Fixed! All endpoints are working again. Sorry for the disruption."
+      }
+    ]
+  },
+  {
+    "thread_ts": "1704070800.002", 
+    "channel": "general",
+    "messages": [
+      {
+        "ts": "1704070800.002",
+        "user": "product_manager",
+        "text": "Team, we're launching the new dashboard feature next week. Please test the beta version."
+      },
+      {
+        "ts": "1704070860.002",
+        "user": "developer",
+        "text": "Looks great! The new analytics charts are much more intuitive."
+      },
+      {
+        "ts": "1704070920.002",
+        "user": "designer",
+        "text": "Love the updated UI. The user flow is much smoother now."
+      }
+    ]
+  },
+  {
+    "thread_ts": "1704074400.003",
+    "channel": "support", 
+    "messages": [
+      {
+        "ts": "1704074400.003",
+        "user": "customer",
+        "text": "How do I configure SSO for my organization?"
+      },
+      {
+        "ts": "1704074460.003",
+        "user": "support_agent",
+        "text": "I'll send you our SSO setup guide. You'll need admin access to configure SAML."
+      },
+      {
+        "ts": "1704074520.003",
+        "user": "customer",
+        "text": "Perfect, thanks! This will help with our security compliance."
+      }
+    ]
+  }
+] 

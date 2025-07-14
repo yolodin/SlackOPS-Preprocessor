@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
 """
-Main pipeline script for processing Slack thread exports.
+Pipeline script for processing Slack thread exports through preprocess, summarize, and classify stages.
 """
 
 import json
 import sys
+import os
+import argparse
 from datetime import datetime
 from typing import Dict, Any, List
 
-# Import our custom modules
-import preprocess
-import summarize
-import classify
+# Add the src directory to the Python path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
+
+# Import our modules
+from slackops import preprocess
+from slackops import summarize
+from slackops import classify
 
 
 def load_slack_export(file_path: str) -> List[Dict[str, Any]]:

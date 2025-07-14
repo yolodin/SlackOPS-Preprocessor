@@ -470,11 +470,11 @@ def create_adapter_config(data_directory: str = "data/") -> Dict[str, Any]:
         },
         "output": {
             "standardized_file": "standardized_slack_data.json",
-            "validation_report": "data_validation_report.json"
+            "validation_report": "../reports/data_validation_report.json"
         }
     }
     
-    config_path = os.path.join(data_directory, "adapter_config.json")
+    config_path = os.path.join("config", "adapter_config.json")
     with open(config_path, 'w') as f:
         json.dump(config, f, indent=2)
     
@@ -547,7 +547,7 @@ def quick_setup(data_directory: str = "data/") -> str:
     adapter.save_standardized_data(threads, output_file)
     
     # Save validation report
-    validation_path = os.path.join(data_directory, "data_validation_report.json")
+    validation_path = os.path.join("reports", "data_validation_report.json")
     with open(validation_path, 'w') as f:
         json.dump(validation_report, f, indent=2, default=str)
     

@@ -1,6 +1,6 @@
 # SlackOPS Preprocessor
 
-This repository contains the AI/NLP backend pipeline for processing Slack support threads from help channels. It's the first stage of a system designed to analyze support interactions, extract insights, and identify automation opportunities in engineering environments.
+This repository contains the backend pipeline for processing Slack support threads from help channels. It's the first stage of a system designed to analyze support interactions, extract insights, and identify automation opportunities in engineering environments.
 
 ## Overview
 

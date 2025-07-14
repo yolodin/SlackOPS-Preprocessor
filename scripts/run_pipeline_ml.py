@@ -10,15 +10,18 @@ import argparse
 from datetime import datetime
 from typing import Dict, Any, List
 
+# Add the src directory to the Python path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
+
 # Import our modules
-import preprocess
-import summarize
-import classify
+from slackops import preprocess
+from slackops import summarize
+from slackops import classify
 
 # Import ML modules with error handling
 try:
-    import classify_ml
-    import summarize_ml
+    from slackops import classify_ml
+    from slackops import summarize_ml
     ML_AVAILABLE = True
 except ImportError as e:
     print(f"ML modules not available: {e}")

@@ -12,13 +12,13 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Import modules
-import preprocess
-import classify
-import summarize
-import classify_ml
-import summarize_ml
-from train_models import create_synthetic_training_data
+# Import our modules
+from . import preprocess
+from . import classify
+from . import summarize
+from . import classify_ml
+from . import summarize_ml
+from .train_models import create_synthetic_training_data
 
 
 def evaluate_classification_models(test_data: List[Dict[str, Any]]) -> Dict[str, Any]:
